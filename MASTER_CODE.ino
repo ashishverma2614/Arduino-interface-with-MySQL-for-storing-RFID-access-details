@@ -4,8 +4,6 @@ Arduino-Interface-with-MySQL-for-storing-RFID-access-details (ARDUINO UNO,ETHERN
 
      
 
-*FOR CONFIGURE YOUR GSM MODULE YOU SHOULD KNOW YOUR SMTP OUTGOING SERVER AND PORT
-
 
   The circuit:
   * Typical pin layout used:(MFRC 522)
@@ -14,13 +12,13 @@ Arduino-Interface-with-MySQL-for-storing-RFID-access-details (ARDUINO UNO,ETHERN
  *             Reader/PCD   Uno/101       Mega      Nano v3    Leonardo/Micro   Pro Micro
  * Signal      Pin          Pin           Pin       Pin        Pin              Pin
  * -----------------------------------------------------------------------------------------
- * RST/Reset   RST          4             4         D9         RESET/ICSP-5     RST
- * SPI SS      SDA(SS)      10            53        D10        10               10
+ * RST/Reset   RST          9             9         D9         RESET/ICSP-5     RST
+ * SPI SS      SDA(SS)      4/10          4/53      D10        10               10
  * SPI MOSI    MOSI         11 / ICSP-4   51        D11        ICSP-4           16
  * SPI MISO    MISO         12 / ICSP-1   50        D12        ICSP-1           14
  * SPI SCK     SCK          13 / ICSP-3   52        D13        ICSP-3           15
  
- created 11 NOV 2016
+ created 21 NOV 2016
  by SOUMYA RANJAN PANDA
 
  For any help contact info@deligence.com
