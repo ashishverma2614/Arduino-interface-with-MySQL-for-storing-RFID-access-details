@@ -3,20 +3,18 @@
 Here We are going to connect Arduino UNO, RFID (MFRC522) & Ethernet Shield with MYSQL Database. So for that first we should connect our Arduino Board with the Ethernet Shield & RFID Module.
 By using the RFID Module we are going to scan our RFID card and tag which are allow or not. And by using our Ethernet shield we are going to send that data to our MYSQL Database which is connect through a pho page. Bellow we provided the code for PHP as well as for Arduino. You also can go through our video to better understanding how to create a database in MYSQL and how to connect with PHP and Arduino.
 
-See pin Configuration bellow 
+
 NOTE-BECAUSE WE ARE USING TWO SPI DEVICES THAT’S WHY WE HAVE TO CHANGE OUR SS PIN FOR RFID MODULE .
 Pin Layout
 
-The following table shows the typical pin layout used:
+https://github.com/DeligenceTechnologies/Arduino-interface-with-MySQL-for-storing-RFID-access-details/blob/master/RFID_LOGGER_WITH_MYSQL_DATABASE.docx?raw=true
 
- 	PCD	Arduino	Teensy
-MFRC522	Uno / 101	Mega	Nano v3	Leonardo / Micro	Pro Micro	2.0	++ 2.0	3.1
-Signal	Pin	Pin	Pin	Pin	Pin	Pin	Pin	Pin	Pin
-RST/Reset	RST	9 [1]	5 [1]	D9	RESET / ICSP-5	RST	7	4	9
-SPI SS	SDA [3]	10 [2]	53 [2]	D10	10	10	0	20	10
-SPI MOSI	MOSI	11 / ICSP-4	51	D11	ICSP-4	16	2	22	11
-SPI MISO	MISO	12 / ICSP-1	50	D12	ICSP-1	14	3	23	12
-SPI SCK	SCK	13 / ICSP-3	52	D13	ICSP-3	15	1	21	13
-[1]	(1, 2) Configurable, typically defined as RST_PIN in sketch/program.
-[2]	(1, 2) Configurable, typically defined as SS_PIN in sketch/program.
-[3]	The SDA pin might be labeled SS on some/older MFRC522 boards.
+ETHERNET SHIELD
+The Arduino Ethernet Shield 2 connects your Arduino to the internet in mere minutes. Just plug this module onto your Arduino Board, connect it to your network with an RJ45 cable (not included) and follow a few simple steps to start controlling your world pharmacy through the internet. As always with Arduino, every element of the platform – hardware, software and documentation – is freely available and open-source. This means you can learn exactly how it's made and use its design as the starting point for your own circuits. Hundreds of thousands of Arduino Boards are already fueling people’s creativity all over the world, every day. 
+
+*Requires an Arduino Board (not included)
+•	Operating voltage 5V (supplied from the Arduino Board)
+•	Ethernet Controller: W5500 with internal 32K buffer
+•	Connection speed: 10/100Mb
+•	Connection with Arduino on SPI port
+For More Details https://www.arduino.cc/en/Main/ArduinoEthernetShield
